@@ -6,6 +6,16 @@
 return {
   -- first key is the mode
   n = {
+
+    -- Keep search find centered
+    ["J"] = { "mzJ`z" },
+    ["<C-d>"] = { "<C-d>zz" },
+    ["<C-u>"] = { "<C-u>zz" },
+    ["n"] = { "nzzzv" },
+    ["N"] = { "Nzzzv" },
+
+    ["gt"] = { "<cmd>bnext<CR>", desc = "Goto next tab" },
+    ["gT"] = { "<cmd>bprev<CR>", desc = "Goto previous tab" },
     -- second key is the lefthand side of the map
 
     -- navigate buffer tabs with `H` and `L`
@@ -32,9 +42,28 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>d"] = { [["_d]] },
+    ["<leader>D"] = { [["_D]] },
+    ["<leader>p"] = { [["+p]] },
+    ["<leader>P"] = { [["+P]] },
+    ["<leader>y"] = { [["+y]] },
+    ["<leader>Y"] = { [["+Y]] },
+  },
+  v = {
+    -- Move selected text up and down with J and K
+    ["J"] = { ":m '>+1<CR>gv=gv" },
+    ["K"] = { ":m '<-2<CR>gv=gv" },
+    ["<leader>d"] = { [["_d]] },
+    ["<leader>D"] = { [["_D]] },
+    ["<leader>p"] = { [["+p]] },
+    ["<leader>P"] = { [["+P]] },
+    ["<leader>y"] = { [["+y]] },
+    ["<leader>Y"] = { [["+Y]] },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    ["<leader>p"] = { [["+p]] },
+    ["<leader>P"] = { [["+P]] },
   },
 }
