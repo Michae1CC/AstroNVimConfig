@@ -76,6 +76,10 @@ return {
       function() vim.lsp.buf.signature_help() end,
       desc = "Help for the current type (read Get Help)",
     },
+    ["<leader>fg"] = {
+      function() require("telescope.builtin").live_grep() end,
+      desc =  "Find word (read Find Global regular expression)",
+    },
   },
   v = {
     -- Move selected text up and down with J and K
