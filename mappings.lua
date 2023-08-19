@@ -48,6 +48,34 @@ return {
     ["<leader>P"] = { [["+P]] },
     ["<leader>y"] = { [["+y]] },
     ["<leader>Y"] = { [["+Y]] },
+    ["<leader>ld"] = {
+      function() vim.diagnostic.open_float() end,
+      desc = "Hover diagnostics",
+    },
+    ["]d"] = {
+      function() vim.diagnostic.goto_next() end,
+      desc = "Previous diagnostic",
+    },
+    ["[d"] = {
+      function() vim.diagnostic.goto_prev() end,
+      desc = "Previous diagnostic",
+    },
+    ["K"] = {
+      function() vim.lsp.buf.implementation() end,
+      desc = "Implementation of the current symbol (read Knowledge)"
+    },
+    ["gi"] = {
+      function() vim.lsp.buf.implementation() end,
+      desc = "Implementation of current symbol (read Get Implementation)",
+    },
+    ["gr"] = {
+      function() vim.lsp.buf.references() end,
+      desc = "References of current symbol (read Get References)",
+    },
+    ["gh"] = {
+      function() vim.lsp.buf.signature_help() end,
+      desc = "Help for the current type (read Get Help)",
+    },
   },
   v = {
     -- Move selected text up and down with J and K
