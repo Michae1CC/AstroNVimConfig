@@ -80,6 +80,10 @@ return {
       function() require("telescope.builtin").live_grep() end,
       desc =  "Find word (read Find Global regular expression)",
     },
+    ["<leader>fs"] = {
+      function() require("telescope.builtin").symbols() end,
+      desc =  "Find symbols (read Find Symbols)",
+    },
   },
   v = {
     -- Move selected text up and down with J and K
