@@ -1,3 +1,4 @@
+
 return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
@@ -9,5 +10,7 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-  "Mofiqul/dracula.nvim",
+  {
+		"Mofiqul/dracula.nvim",
+  }
 }

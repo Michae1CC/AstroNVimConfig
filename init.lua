@@ -65,6 +65,11 @@ return {
     },
   },
 
+  -- Configure require("dracula").setup() options
+  dracula = {
+    transparent_bg = true,
+  },
+
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
@@ -81,5 +86,11 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+	  -- Required for a transparent background
+    require("notify").setup({
+      background_colour = "#000000",
+    })
+	  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	  vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
   end,
 }
