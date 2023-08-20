@@ -12,5 +12,8 @@ return {
   -- },
   {
 		"Mofiqul/dracula.nvim",
+  },
+  {
+    "christoomey/vim-tmux-navigator",
   }
 }
