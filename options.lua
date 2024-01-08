@@ -28,7 +28,7 @@ return {
     backspace = "indent,eol,start", -- backspace
     hlsearch = false, -- text search
     incsearch = true, -- text search
-    scrolloff = 5, -- Allows us to view 5 more lines above or below our current cursor position
+    scrolloff = 999, -- Centers the cursor
   },
 }
 -- If you need more control, you can use the function()...end notation
