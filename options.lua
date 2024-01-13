@@ -7,6 +7,22 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    nu = true, -- Show relative numberline
+    softtabstop = 2, -- Number of space in a tab
+    background = "dark", -- appearance
+    scrolloff = 999, -- Centers the cursor
+    colorcolumn = "80", -- line bar at 80 characters
+    updatetime = 500, -- Length of time to wait before triggering the plugin
+    swapfile = false, --editor history
+    backup = false, --editor history
+    backspace = "indent,eol,start", -- backspace
+    hlsearch = true, -- text search
+    incsearch = true, -- text search
+    foldnestmax = 2,
+    ignorecase = true,
+    smartcase = true,
+    visualbell = true,
+    confirm = true,
   },
   g = {
     mapleader = "\\", -- sets vim.g.mapleader
@@ -18,17 +34,6 @@ return {
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
-    nu = true, -- Show relative numberline
-    softtabstop = 2, -- Number of space in a tab
-    background = "dark", -- appearance
-    colorcolumn = "80", -- line bar at 80 characters
-    updatetime = 500, -- Length of time to wait before triggering the plugin
-    swapfile = false, --editor history
-    backup = false, --editor history
-    backspace = "indent,eol,start", -- backspace
-    hlsearch = false, -- text search
-    incsearch = true, -- text search
-    scrolloff = 999, -- Centers the cursor
   },
 }
 -- If you need more control, you can use the function()...end notation
